@@ -152,7 +152,7 @@ Realizar un análisis de la información ambiental disponible para los sistemas 
 
 # LOCALIZACIÓN Y DURACIÓN
 
-El estudio será desarrollado en sistemas acuáticos continentales que presentan actividad de acuicultura, en las regiones de Los Ríos, Los Lagos, y Aysén del General Carlos Ibáñez del Campo. La duración del estudio es de 18 meses. [@gerding_suelos_2010][@pesse2019; @pesse_evaluacion_2023; @pesse2023][@nahuelhual2025; @nahuelhual2013; @nahuelhual2014; @nahuelhual2018; @nahuelhual2016; @nahuelhual2017; @nahuelhual; @bentancourt2017]
+El estudio será desarrollado en sistemas acuáticos continentales que presentan actividad de acuicultura, en las regiones de Los Ríos, Los Lagos, y Aysén del General Carlos Ibáñez del Campo. La duración del estudio es de 18 meses. [@gerding_suelos_2010][@pesse2019; @pesse_evaluacion_2023; @pesse2023][@nahuelhual2025; @nahuelhual2013; @nahuelhual2014; @nahuelhual2018; @nahuelhual2016; @nahuelhual2017; @nahuelhual; @bentancourt2017] xxxxx
 
 ![](images/clipboard-892501930.png){width="406"}
 
