@@ -1,0 +1,171 @@
+---
+format: 
+  pdf:
+    pdf-engine: xelatex
+    papersize: letter  # ← Asegura consistencia
+    mainfont: "Ubuntu Regular"
+    fontsize: 12pt
+    include-in-header:
+      - preamble.tex
+      - fancyhdr.tex
+    include-before-body:
+      - portadatemplate.tex
+    geometry: margin=2.5cm
+    number-sections: true
+    toc: false
+# Configuración específica para bibliografía
+bibliography: citas/bibliografia-portada.bib
+# Opciones de sangría (indentación)
+indent: true
+title: ""
+title-block: false
+title-block-style: none
+subtitle: ""
+---
+
+```{=latex}
+\begin{flushright}
+\includegraphics[width=4cm]{imagenes/logoifop.png}
+\end{flushright}
+```
+
+```{=latex}
+\begin{flushright}
+{\fontsize{24}{28}\selectfont\color{cyan} Informe de Avance 1}
+\end{flushright}
+```
+
+```{=latex}
+\begin{flushright}
+{\fontsize{16}{20}\selectfont\color{Black} Convenio de Desempeño 2025.\\
+Evaluación del estado ambiental de los lagos utilizados para\\
+actividades de acuicultura en la zona sur de Chile (XIII Etapa)}
+\end{flushright}
+```
+
+```{=latex}
+\begin{flushright}
+{\fontsize{14}{20}\selectfont\color{black} \textbf{Subsecretaría de Economía y EMT / Julio de 2025.}}
+\end{flushright}
+```
+
+```{=latex}
+\begin{flushright}
+  {\fontsize{12}{16}\selectfont\color{cyan} Requirente}
+
+  {\fontsize{12}{16}\selectfont\color{black}{Subsecretaría de Economía y EMT\\
+  Javiera Constanza Petersen Muga}}
+\end{flushright}
+```
+
+```{=latex}
+\begin{flushright}
+  {\fontsize{12}{16}\selectfont\color{cyan} Ejecutor}
+
+  {\fontsize{12}{16}\selectfont\color{black} \textbf{Instituto de Fomento Pesquero, IFOP}}
+
+  {\fontsize{12}{16}\selectfont\color{black}
+  Director Ejecutivo\\
+  Gonzalo Pereira Puchy\\[0.5cm]
+  Jefe División Investigación en Acuicultura\\
+  Gastón Vidal Santana\\[0.5cm]
+  Jefe Departamento de Medio Ambiente\\
+  Alejandra Oyanedel Pérez\\[0.5cm]
+  Jefe de Proyecto\\
+  Nicole Pesse Lastra
+  }
+\end{flushright}
+```
+
+```{=latex}
+\begin{flushright}
+  {\fontsize{12}{16}\selectfont\color{cyan} \textbf{Autores}}
+  
+  {\fontsize{12}{16}\selectfont\color{black}
+  Nicole Pesse Lastra\\
+  Carolina Rösner Oyarzo\\
+  Caludia Perez Saez\\
+  Gonzalo Calderon\\
+  Rodrigo Vera Sepúlveda
+  }
+\end{flushright}
+```
+
+\newpage{}
+
+```{=latex}
+\newpage
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+% Título del índice
+\renewcommand{\contentsname}{\textcolor{black}{Índice}}
+
+% Estilo del índice - números de página
+\renewcommand{\cftsecpagefont}{\color{black}}
+\renewcommand{\cftsubsecpagefont}{\color{black}}
+\renewcommand{\cftsubsubsecpagefont}{\color{black}}
+
+% Estilo del índice - texto
+\renewcommand{\cftsecfont}{\color{black}\bfseries}
+\renewcommand{\cftsubsecfont}{\color{red}}
+\renewcommand{\cftsubsubsecfont}{\color{black}}
+
+% Ancho del número y color de separación
+\renewcommand{\cftsecnumwidth}{3em}
+\renewcommand{\cftsecaftersnum}{\color{black}}
+
+\tableofcontents
+\newpage
+```
+
+```{=latex}
+\setmainfont{Open Sans}
+\fontsize{12}{16}\selectfont
+```
+
+# INTRODUCCIÓN
+
+La actividad de acuicultura en lagos se ha centrado en el cultivo de salmónidos, desarrollándose activamente en la zona sur austral del país, entre la región de Los Ríos y Magallanes y de la Antártica Chilena, concentrándose en los lagos Araucanos, Chilotes, y Patagónicos. Estos cuerpos de agua presentan diferentes presiones antrópicas, las cuales han generado en mayor o menor grado, modificaciones en las condiciones ambientales de estos ecosistemas. Cabe señalar, que esta tendencia permanece y se agudiza por otros factores, como el cambio climático, la presión demográfica, la integración de las economías y las deficiencias en los marcos institucionales locales, regionales y globales. Lo anteriormente expuesto, deja en manifiesto la importancia de monitorear los sistemas lacustres y preservar los servicios ecosistémicos que entregan. La Ley General de Pesca y Acuicultura y sus reglamentos reconocen y establecen los límites de aceptabilidad sobre las presiones ambientales que puedan generar las actividades de acuicultura, así como la necesidad de prevenir su aparición, estableciendo dentro de sus exigencias el mantener el equilibrio ecológico de las zonas concedidas y que los centros de cultivo operen en niveles compatibles con las capacidades de carga de los cuerpos de agua. Así mismo, reconoce la fragilidad de los cuerpos de agua lacustres en los que se desarrolla la salmonicultura y la importancia de mantener las condiciones que permitan el desarrollo de la vida acuática, para lo cual se requiere la implementación de acciones de monitoreo de dichos cuerpos de agua.
+
+# ANTECEDENTES
+
+De acuerdo al artículo 74º, inciso 3º, de la Ley General de Pesca y Acuicultura, sobre la mantención de la limpieza y del equilibrio ecológico de la zona concedida, y su artículo 87º, sobre reglamentar las medidas de protección del medio ambiente para que los establecimientos de acuicultura operen en niveles compatibles con las capacidades de los cuerpos de agua lacustres, fluviales y marítimos, el Reglamento Ambiental para la Acuicultura (RAMA) D.S. Nº320/2001 y su Resolución acompañante Nº3.612/2009 constituyen las herramientas ambientales que permiten regular estas actividades. Sin embargo, se requiere además evaluar, especialmente en el caso de los lagos, las capacidades de carga de estos cuerpos de agua, con la finalidad de verificar que la actividad opera en equilibrio con la condición ambiental del área.
+
+Con la finalidad de abordar la evaluación ambiental de los efectos de la acuicultura que se desarrolla en los lagos del país, la Subsecretaría de Pesca y Acuicultura, a través del Fondo de Investigación Pesquera y Acuicultura (FIPA) y, en los últimos años mediante el convenio de IFOP con la Subsecretaría de Economía y Empresas de Menor Tamaño, ha realizado estudios entre el 2012-2024 (primera a duodécima etapa). El presente estudio comprende la revisión y análisis de los datos obtenidos a través del estudio “Evaluación del estado ambiental de los lagos utilizados con actividades de acuicultura en la zona sur de Chile” desde el año 2012 al 2023, integrando los antecedentes con información obtenida desde otras fuentes.\
+La importancia de los sistemas acuáticos continentales es incuestionable. En el escenario del cambio climático, ya que se prevé una disminución en la calidad del agua, y un aumento en las oscilaciones de los regímenes pluviales. Las redes hídricas que conforman las cuencas lacustres, aportan con insustituibles servicios ecosistémicos y funcionan como amortiguadores de la variación térmica, proveen de agua para la producción de alimentos, agua potable y actividades recreativas. Las cuencas lacustres también permiten la conservación del patrimonio natural y cultural, son fuente de diversidad biológica y la producción de energía eléctrica. Por sus características de acumuladores del agua y sustancias transportadas a través de su cuenca, son buenos centinelas de cambios ambientales. Por lo anterior se deben buscar las herramientas necesarias para conservar los recursos hídricos, fundamentales para el desarrollo sostenible, socio ambiental y económico del país.
+
+# OBJETIVOS
+
+## Objetivo General
+
+Realizar un análisis de la información ambiental disponible para los sistemas acuáticos continentales con actividades de acuicultura entre las regiones de Los Ríos y Magallanes y la Antártica Chilena, que permita clasificar su estado ambiental.
+
+## Objetivos Específicos.
+
+### Analizar, evaluar y clasificar la data ambiental disponible para sistemas acuáticos continentales con actividades de acuicultura.
+
+### Evaluar el uso de teledetección como herramienta complementaria al monitoreo de sistemas dulceacuícolas, estimando niveles de clorofila, y la calidad del agua en los lagos con actividad de acuicultura.
+
+# LOCALIZACIÓN Y DURACIÓN
+
+El estudio será desarrollado en sistemas acuáticos continentales que presentan actividad de acuicultura, en las regiones de Los Ríos, Los Lagos, y Aysén del General Carlos Ibáñez del Campo. La duración del estudio es de 18 meses. [@gerding_suelos_2010][@pesse2019; @pesse_evaluacion_2023; @pesse2023][@nahuelhual2025; @nahuelhual2013; @nahuelhual2014; @nahuelhual2018; @nahuelhual2016; @nahuelhual2017; @nahuelhual; @bentancourt2017]
+
+![](images/clipboard-892501930.png){width="406"}
+
+## Agradecimientos
+
+```{r}
+#| label: plotxy
+#| echo: false
+x<-c(1,2,3,4,5,6,7,8)
+y<-c(3,6,9,12,15,18,21,24)
+plot(x,y)
+```
+
+\newpage
+
+# Referencias
